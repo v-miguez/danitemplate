@@ -1,4 +1,4 @@
-*{padding: 0; margin: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif}
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; list-style: none; text-decoration: none;}
 .flex{display: flex}
 .column{flex-direction: column}
 header{
@@ -23,7 +23,7 @@ header{
     font-size: 18px;
     padding-bottom: 10px;
 }
-.menuwrapp{
+.navbar{
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
@@ -35,66 +35,8 @@ ul{
     width: 100%;
     justify-content: space-around;
 }
-.navbar .navitem{
-    width: 20%;
-    list-style-type: none;
-    padding: 10px;
-    color: white;
-    border-right: 1px solid white;
-    text-align: center;
-}
-.navbar .navitem{
-    list-style-type: none;
-    padding: 20px;
-    color: white;
-}
 
-/*DROPDOWN*/
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 80%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: flex;
-    flex-direction: column;
-    margin-top:20px;
-    background-color: #38ada9;
-  }
-  .dropdown:hover .dropdown-content a {
-    padding: 15px 0;
-    text-decoration: none;
-    color: white;
-    position: relative;
 
-  }
-  
-  .dropdown:hover .dropdown-content a:before {
-    content : "";
-    position: absolute;
-    left    : 10%;
-    bottom  : 0;
-    height  : 1px;
-    width   : 80%;  /* or 100px */
-    border-bottom:1px solid white;
-  }
-  .dropdown:hover .dropdown-content a:last-child:before {
-    border-bottom:0px solid white;
-  }
-  .dropdown:hover .dropdown-content a:hover{
-      color: black;
-  } 
-/*-----------------------*/
 
 main{
     min-height: 90vh;
@@ -153,13 +95,37 @@ main{
     margin-bottom: 10px;
     border-radius: 5%;
 }
-.blocktitle{
-
-}
 .blocktext{
     line-height: 1.8;
 }
-.ramdomactivity span{
+.ramdomactivity{
     font-weight: bold;
+}
+.ramdomactivity span{
     color: #38ada9;
+}
+.form-inline span{
+    margin-right: 10px;
+    font-weight: bold;
+}
+footer{
+    background-color: #38ada9;
+    justify-content: center;
+    padding: 20px 0;
+    align-items: center;
+}
+.footer{
+    width: 60%;
+    justify-content: space-between;    
+}
+.byebye{
+    width: 50%;
+}
+.footerlinks h3{
+    font-size: 23px ;
+}
+
+.copyright{
+    justify-content: center;
+    align-items: center;
 }
