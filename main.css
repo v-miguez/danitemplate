@@ -12,7 +12,7 @@ header{
 }
 .logobox .logo{
     align-items: center;
-    padding: 20px 0 10px 0;
+    padding: 40px 0 30px 0;
 
 }
 .logobox img{
@@ -61,6 +61,7 @@ main{
     flex-wrap: wrap;
     padding: 20px;
     justify-content: space-between;
+    min-height: 63vh;
 }
 .card{
     width: 290px;
@@ -70,7 +71,7 @@ main{
 
 }
 .card .image{
-    height: 60%;
+    height: 50%;
     border-radius: 5%;
 
 }
@@ -81,13 +82,28 @@ main{
 
 }
 .card .description{
-    height: 40%;
+    height: 50%;
     background-color: #6a89cc;
-    padding: 20px;
-    font-weight: bold;
+    padding: 10px 20px;
     border-radius: 0 0 1% 1% ;
+    
+}
+.card .description h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.card .description h3{
+    font-size: 14px;
+}
+.card .description .tags{
+    border-top: 1px solid #eee;
+    color: rgba(238,238,238, 0.7);
+    font-style: italic;
 
 }
+
+
 .block{
     background-color: #38ada9;
     height: 300px;

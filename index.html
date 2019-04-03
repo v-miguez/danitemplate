@@ -63,47 +63,8 @@
                     </form>
                 </div>
             <div class="cards flex">
-                <div class="card">
-                    <div class="image"><img src="https://picsum.photos/200/210" alt="">
-                    </div>
-                    <div class="description"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde</p></div>
-                </div>
-                <div class="card">
-                    <div class="image"><img src="https://picsum.photos/200/210" alt=""></div>
-                    <div class="description">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde </p>
-                    </div>       
-                </div>
-                <div class="card">
-                    <div class="image"><img src="https://picsum.photos/200/210" alt=""></div>
-                    <div class="description">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde </p>
-                    </div>       
-                </div>
-                <div class="card">
-                    <div class="image"><img src="https://picsum.photos/200/210" alt=""></div>
-                    <div class="description">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde </p>
-                    </div>       
-                </div>
-                <div class="card">
-                    <div class="image"><img src="https://picsum.photos/200/210" alt=""></div>
-                    <div class="description">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde </p>
-                    </div>       
-                </div>
-                <div class="card">
-                    <div class="image"><img src="https://picsum.photos/200/210" alt=""></div>
-                    <div class="description">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde </p>
-                    </div>       
-                </div>
-                <div class="card">
-                    <div class="image"><img src="https://picsum.photos/200/210" alt=""></div>
-                    <div class="description">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde </p>
-                    </div>       
-                </div>
+                
+                
             </div>
             <div class="publi flex">
                     MUJERES MADURAS BUSCAN SEXO EN TU ZONA!!  
@@ -170,6 +131,26 @@
         $(function(){
             $('.dropdown-toggle').dropdown();
         });
-        </script>
+    </script>
+    <script>
+        var apicards= [
+            {"imgUrl": "https://picsum.photos/200/210", "titulo":"titulo", "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde", "tags":"prueba" },
+            {"imgUrl": "https://picsum.photos/200/210", "titulo":"titulo", "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde", "tags":"prueba" },
+            {"imgUrl": "https://picsum.photos/200/210", "titulo":"titulo", "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde", "tags":"prueba" },
+            {"imgUrl": "https://picsum.photos/200/210", "titulo":"titulo", "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde", "tags":"prueba" },
+            {"imgUrl": "https://picsum.photos/200/210", "titulo":"titulo", "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde", "tags":"prueba" },
+            {"imgUrl": "https://picsum.photos/200/210", "titulo":"titulo", "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde", "tags":"prueba" },
+            {"imgUrl": "https://picsum.photos/200/210", "titulo":"titulo", "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde", "tags":"prueba" },
+            {"imgUrl": "https://picsum.photos/200/210", "titulo":"titulo", "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde", "tags":"prueba" },
+            {"imgUrl": "https://picsum.photos/200/210", "titulo":"titulo", "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde", "tags":"prueba" },
+            {"imgUrl": "https://picsum.photos/200/210", "titulo":"titulo", "texto": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus voluptatem, inventore debitis voluptatibus unde", "tags":"prueba" }
+            ]
+        $(document).ready(()=>{
+            apicards.forEach((card)=>{
+                var card =`<div class='card'><div class='image'><img src='${card.imgUrl}' alt=''></div><div class='description'><h3>${card.titulo}</h3><p>${card.texto}</p><div class='tags'>${card.tags}</div></div></div>`
+                $(".cards").append(card)
+            })
+        })
+    </script>
 </body>
 </html>
