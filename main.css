@@ -25,17 +25,39 @@ header{
 }
 .navbar{
     width: 100%;
+   
+}
+.menu{
+    background-color: #202528;    
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #202528;
     z-index: 999;
+}
+.menu .nav-item{
+    color: white;
+    border-right: 1px solid white;
+    width: 20%;
+    text-align: center;
+}
+.menu .nav-item:last-child{
+    border: none;
+}
+.menu .nav-link{
+    color: white;
 }
 ul{
     width: 100%;
     justify-content: space-around;
 }
-
+.dropdown-menu{
+    background-color: #202528;
+    width: 100%;
+}
+.dropdown-item{
+    color: white;
+    margin: 10px 0;
+}
 
 
 main{
