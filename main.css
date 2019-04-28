@@ -188,12 +188,10 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.plans-big{
 
-}
-.plans-mobile{
-    display: none;
-    justify-content: center;
+.plans{
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -238,14 +236,12 @@ footer{
     .footer{
         width: 90%;
     }
-    .plans-big{
-        display: none;
-    }
+  
     .plans-mobile{
         display: flex;
     
     }
-    .plans-mobile span, .plans-mobile form{
+    .plans span, .plans form{
         margin: 0 auto;
     }
     
