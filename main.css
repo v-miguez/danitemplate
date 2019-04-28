@@ -103,16 +103,17 @@ main{
     flex-wrap: wrap;
     justify-content: space-between;
     min-height: 63vh;
+    padding-right: 10px;
 }
 .card{
     width: 30%;
     margin: 10px 0;
-    height: 350px;
+    height: 385px;
     border: none;
 
 }
 .card .image{
-    height: 50%;
+    height: 70%;
     border-radius: 5%;
 
 }
@@ -187,7 +188,13 @@ footer{
     justify-content: center;
     align-items: center;
 }
+.plans-big{
 
+}
+.plans-mobile{
+    display: none;
+    justify-content: center;
+}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -231,6 +238,17 @@ footer{
     .footer{
         width: 90%;
     }
+    .plans-big{
+        display: none;
+    }
+    .plans-mobile{
+        display: flex;
+    
+    }
+    .plans-mobile span, .plans-mobile form{
+        margin: 0 auto;
+    }
+    
 }
 @media only screen and (max-width: 492px){
     .card{
@@ -249,5 +267,6 @@ footer{
     }
     .card .description{
         height: auto;
+
     }
 }
