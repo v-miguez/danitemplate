@@ -160,7 +160,7 @@ main{
 .ramdomactivity{
     font-weight: bold;
 }
-.ramdomactivity span{
+.ramdomactivity a{
     color: #38ada9;
 }
 .form-inline span{
