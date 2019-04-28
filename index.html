@@ -159,7 +159,7 @@
             ]
         $(document).ready(()=>{
             apicards.forEach((card)=>{
-                var card =`<div class='card lazy'><div class='image'><img src='${card.imgUrl}' alt=''></div><div class='description'><h3>${card.titulo}</h3><p>${card.texto}</p><div class='tags'>${card.tags}</div></div></div>`
+                var card =`<div class='card'><div class='image'><img src='${card.imgUrl}' alt=''></div><div class='description'><h3>${card.titulo}</h3><p>${card.texto}</p><div class='tags'>${card.tags}</div></div></div>`
                 $(".cards").append(card)
             })
         })

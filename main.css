@@ -101,12 +101,11 @@ main{
 
 .cards{
     flex-wrap: wrap;
-    padding: 20px;
     justify-content: space-between;
     min-height: 63vh;
 }
 .card{
-    width: 290px;
+    width: 30%;
     margin: 10px 0;
     height: 350px;
     border: none;
@@ -238,11 +237,12 @@ footer{
         width: 100%;
         margin: 10px;
     }
-}
-@media only screen and (max-width: 390px){
     .byebye{
         display: none;
     }
+}
+@media only screen and (max-width: 390px){
+    
     .content{
         margin: 0 auto;
         width: 100%;
